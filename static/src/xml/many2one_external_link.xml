@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+
+     <t t-name="many2one_external_link.Many2OneExternalLink" t-inherit="web.Many2OneField" t-inherit-mode="primary"
+        owl="1">
+        <xpath expr="//div//button[@t-on-click='onExternalBtnClick']" position="replace">
+            <a t-attf-href="{{url}}" class="btn btn-secondary fa fa-external-link o_external_button"
+               target="_blank"
+               title="External Link"
+            ></a>
+        </xpath>
+    </t>
+</templates>
